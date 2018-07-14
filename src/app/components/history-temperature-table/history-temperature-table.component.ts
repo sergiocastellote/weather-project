@@ -26,6 +26,7 @@ export class HistoryTemperatureTableComponent implements OnInit {
     this.name = this.route.snapshot.paramMap.get('name');
     this.tempHistory = JSON.parse(this.temperatureService.getHistory(id));
     if (this.tempHistory) {
+      this.tempHistory.reverse();
       this.totalRows = this.tempHistory.length;
       this.tempHistoryToShow = this.tempHistory.slice(this.initRow, this.endRow);
     }
