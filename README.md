@@ -1,9 +1,9 @@
-#configure and install
+# Configure and install
 
 - Clone project
 - Exectute 'npm install'
 
-#observations
+# Observations
 
 Se han tomado un par de decisiones que aquí vienen explicadas:
 
