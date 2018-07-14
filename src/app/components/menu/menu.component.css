@@ -1,0 +1,14 @@
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.option-menu {
+    height: 100px;
+    width: 100px;
+}
+
+/* 
+.links li {
+    text-align: center;
+} */

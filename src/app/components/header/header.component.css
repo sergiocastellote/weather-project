@@ -1,0 +1,19 @@
+
+header {
+  background: url(../../../assets/img/yellowstone-1589613_1920.jpg);
+  background-position: center;
+  height: 400px;
+}
+
+header a {
+  text-decoration: transparent;
+  color: #212529;
+}
+
+.title-header{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+

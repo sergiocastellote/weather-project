@@ -1,0 +1,22 @@
+<div class="show-time-content">
+  <h4 class="text-center">
+    <div id="currentHour" class="margin-bottom">
+        {{time}}
+    </div>
+  </h4>
+  <table id="currentTimeTable" class="table margin-left">
+    <thead>
+      <tr>
+        <th scope="col">{{ 'TABLES.CITY' | translate }}</th>
+        <th scope="col">{{ 'TABLES.TEMPERATURES' | translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="rowsTable" *ngFor="let cityData of cityListTemp.list">
+        <td>{{cityData.name}}</td>
+        <td>{{cityData.main.temp}}</td>
+        <a class="nav-item nav-link" routerLink="/historical/{{cityData.id}}/{{cityData.name}}">{{ 'TABLES.HISTORICAL' | translate }}</a>
+      </tr>
+    </tbody>
+  </table>
+</div>

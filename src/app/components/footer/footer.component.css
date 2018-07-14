@@ -1,0 +1,15 @@
+footer {
+  background-color: #212529;
+  text-align: center;
+  padding: 25px;
+}
+
+footer a {
+  color: white;
+  text-decoration: transparent;
+}
+
+header a {
+  text-decoration: transparent;
+  color: #212529;
+}

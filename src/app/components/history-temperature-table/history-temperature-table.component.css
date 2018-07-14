@@ -1,0 +1,12 @@
+.container-button {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}

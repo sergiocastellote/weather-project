@@ -1,0 +1,31 @@
+<article class="article">
+  <h4 class="text-center">
+    <div class="margin-bottom">
+        {{ 'TABLES.HISTORICALOF' | translate }} {{name}}
+    </div>
+  </h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">{{ 'TABLES.TIME' | translate }}</th>
+        <th scope="col">{{ 'TABLES.TEMPERATURES' | translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let temp of tempHistoryToShow  | reverse">
+        <td>{{temp.time}}</td>
+        <td>{{temp.temp}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="this.tempHistory" class="container-button">
+    <div class="button">
+        <button class="btn btn-dark" (click)="nextRows()">{{ 'BUTTON.NEXT' | translate }}</button>
+    </div>
+    <div class="button">
+        <button class="btn btn-dark" (click)="previousRows()">{{ 'BUTTON.PREVIOUS' | translate}}</button>
+      </div>
+  </div>
+  
+
+</article>

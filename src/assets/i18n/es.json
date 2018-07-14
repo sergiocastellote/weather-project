@@ -1,0 +1,27 @@
+{
+    "HEADER": {
+      "TEXT1": "Desarrollado con",
+      "TEXT2": "INFORMACIÓN DE TEMPERATURA",
+      "ANGULAR": "Angular6",
+      "BOOTSTRAP": "Bootstrap"
+    },
+    "FOOTER": {
+      "TEXT1": "Por Sergio Castellote"
+    },
+    "MENU": {
+      "LABEL": "Temperatura"
+    },
+    "TABLES": {
+      "CITY": "Ciudad",
+      "TEMPERATURES": "Temperaturas",
+      "HISTORICAL": "Historial",
+      "HISTORICALOF": "Historial de",
+      "TIME": "Hora"
+    },
+    "BUTTON": {
+      "NEXT": "Siguiente",
+      "PREVIOUS": "Previo"
+    },
+    "LANGUAGE": "Selecciona lenguage"
+  }
+  
