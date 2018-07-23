@@ -38,17 +38,20 @@ export class HistoryTemperatureTableComponent implements OnInit {
     this.tempHistoryToShow = this.tempHistory.slice(this.initRow, this.endRow);
     // if is last page we select the same rows
     if (this.tempHistoryToShow.length === 0) {
-      this.initRow = this.initRow + 10;
-      this.endRow = this.endRow + 10;
-      this.tempHistoryToShow = this.tempHistory.slice(this.initRow, this.endRow);
+      this.incrementIndexRows();
     }
   }
 
   previousRows() {
     if (this.tempHistoryToShow.length >= 9) {
-      this.initRow = this.initRow + 10;
-      this.endRow = this.endRow + 10;
-      this.tempHistoryToShow = this.tempHistory.slice(this.initRow, this.endRow);
+      this.incrementIndexRows();
     }
   }
+
+  incrementIndexRows() {
+    this.initRow = this.initRow + 10;
+    this.endRow = this.endRow + 10;
+    this.tempHistoryToShow = this.tempHistory.slice(this.initRow, this.endRow);
+  }
+
 }
